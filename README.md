@@ -10,14 +10,12 @@ This Doom mod promises to be the best Wolfenstein that Wolfenstein can be! It ad
 
 But, "new" and "enhanced" are not specific at all, is it? We know that, and that's why we have included a list with changes right below!
 
-(SPOILER START)
 - The Fist has been replaced by the Knife.
 - The Chainsaw has been replaced by the Spear of Destiny (yes, you finally get to use it!).
 - The Pistol is, well, still a Pistol, but with the Wolf3D style. Same goes for the Shotgun and Super Shotgun.
 - The Chaingun has been replaced with an MP40, with the same fire rate. Where's the Chaingun, then?
 - Well, the Rocket Launcher has been replaced by the Chaingun, now TWICE as fast!
 - A Rocket Launcher-like weapon, however, is still included! The Plasma Rifle has been replaced by the Napalm Launcher.
-(SPOILER END)
 
 The way we're gonna release this baby is to first release Episode 1 as our Shareware episode. Then, if you enjoyed the regular campaign, you can get the other 5 Episodes from Wolfenstein's campaign! And then, if you really, REALLY liked those episodes, you can get the extra 21 Levels from Spear of Destiny! Oh boy, does that sound like a deal to me!
 
