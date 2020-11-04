@@ -13,7 +13,7 @@ Hit points = 25
 Alert sound = 42
 Injury frame = 188
 Exploding frame = 189
-Death sound = 100
+Death sound = 65
 Action sound = 0
 Gib health = -25
 
@@ -34,7 +34,7 @@ Thing 10 (Napalm Fireball)
 Initial frame = 97
 Speed = 1966080
 Missile damage = 20
-Bits = BOUNCES+MISSILE+NOBLOCKMAP+TRANSLUCENT+DROPOFF
+Bits = NOBLOCKMAP+TRANSLUCENT+MISSILE+BOUNCES+DROPOFF
 
 Thing 11 (Schutzstaffel)
 Hit points = 100
@@ -67,7 +67,7 @@ Pain chance = 0
 Pain sound = 0
 Mass = 400
 Action sound = 0
-Bits = COUNTKILL+FLOAT+SOLID+SHOOTABLE+NOGRAVITY
+Bits = NOGRAVITY+FLOAT+SHOOTABLE+COUNTKILL+SOLID
 
 Thing 19 (Scientist)
 Bits = COUNTKILL+SHOOTABLE+SOLID
@@ -121,13 +121,13 @@ Thing 114 (Dead Soldier)
 
 Thing 141 (Beta Plasma 1)
 Alert sound = 92
-Bits = MISSILE+NOBLOCKMAP+TRANSLUCENT+NOGRAVITY+DROPOFF
+Bits = NOGRAVITY+NOBLOCKMAP+TRANSLUCENT+MISSILE+DROPOFF
 
 Thing 142 (Beta Plasma 2)
 Initial frame = 1042
 Alert sound = 92
 Death frame = 1044
-Bits = MISSILE+NOBLOCKMAP+TRANSLUCENT+NOGRAVITY+DROPOFF
+Bits = NOGRAVITY+NOBLOCKMAP+TRANSLUCENT+MISSILE+DROPOFF
 
 Thing 151 (25 Armor)
 Initial frame = 2000
@@ -153,22 +153,22 @@ Close attack frame = 2037
 Thing 155 (Gold Cross)
 ID # = 4003
 Initial frame = 2041
-Bits = COUNTITEM+SPECIAL
+Bits = SPECIAL+COUNTITEM
 
 Thing 156 (Gold Chalice)
 ID # = 4004
 Initial frame = 2042
-Bits = COUNTITEM+SPECIAL
+Bits = SPECIAL+COUNTITEM
 
 Thing 157 (Gilded Chest)
 ID # = 4005
 Initial frame = 2043
-Bits = COUNTITEM+SPECIAL
+Bits = SPECIAL+COUNTITEM
 
 Thing 158 (Gilded Crown)
 ID # = 4006
 Initial frame = 2044
-Bits = COUNTITEM+SPECIAL
+Bits = SPECIAL+COUNTITEM
 
 Thing 159 (Hans Grosse DeathCam)
 ID # = 4100
