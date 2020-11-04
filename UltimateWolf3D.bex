@@ -17,9 +17,13 @@ Death sound = 65
 Action sound = 0
 Gib health = -25
 
-Thing 3 (Shotgun Officer)
+Thing 3 (Shotgun Schutzstaffel)
+Hit points = 100
+Alert sound = 44
 Injury frame = 221
 Exploding frame = 222
+Death sound = 68
+Action sound = 0
 
 Thing 6 (Mutant)
 Hit points = 150
@@ -59,6 +63,7 @@ Thing 16 (Hans Grösse)
 Hit points = 2550
 Injury frame = 541
 Pain chance = 0
+Pain sound = 0
 Close attack frame = 0
 Action sound = 0
 
@@ -70,6 +75,13 @@ Action sound = 0
 Bits = NOGRAVITY+FLOAT+SHOOTABLE+COUNTKILL+SOLID
 
 Thing 19 (Scientist)
+Hit points = 30
+Injury frame = 1140
+Pain sound = 27
+Far attack frame = 0
+Death sound = 65
+Speed = 15
+Action sound = 0
 Bits = COUNTKILL+SHOOTABLE+SOLID
 
 Thing 24 (Officer)
@@ -91,7 +103,12 @@ Death sound = 0
 Thing 36 (Spear of Destiny projectile)
 
 Thing 47 (Armor helmet)
+Width = 4194304
 Bits = SPECIAL
+
+Thing 56 (Life sphere)
+
+Thing 63 (Armor Sphere)
 
 Thing 66 (Gasoline Canister)
 
@@ -114,6 +131,57 @@ Thing 77 (Napalm Launcher)
 Thing 78 (Winchester 1912 Shotgun)
 
 Thing 79 (M30 Luftwaffe Double Barreled Shotgun)
+
+Thing 80 (Pool Of Oil)
+Bits = 0
+
+Thing 81 (Barrel)
+
+Thing 82 (Table & Chairs)
+
+Thing 83 (Lamp)
+
+Thing 84 (Candelier)
+Bits = SPAWNCEILING+NOGRAVITY
+
+Thing 85 (Hanging Skeleton)
+Bits = SPAWNCEILING+NOGRAVITY+SOLID
+
+Thing 86 (Pillar)
+
+Thing 87 (Potted Tree)
+
+Thing 88 (Skeleton)
+Bits = 0
+
+Thing 89 (Sink)
+
+Thing 90 (Potted Plant)
+
+Thing 91 (Plantless Pot)
+
+Thing 92 (Table No Chairs)
+
+Thing 93 (Hanging Lamp)
+Bits = SPAWNCEILING+NOGRAVITY
+
+Thing 94 (Hanging Pots And Pans)
+Bits = SPAWNCEILING+NOGRAVITY
+
+Thing 95 (Knight's Armor)
+
+Thing 96 (Hanging Cage)
+Bits = SPAWNCEILING+NOGRAVITY+SOLID
+
+Thing 97 (Hanging Cage With Spooks)
+Bits = SPAWNCEILING+NOGRAVITY+SOLID
+
+Thing 98 (Pile O' Bones)
+Bits = 0
+
+Thing 99 (Bed)
+
+Thing 100 (Spitoon)
 
 Thing 113 (Dead American Troop)
 
@@ -153,21 +221,29 @@ Close attack frame = 2037
 Thing 155 (Gold Cross)
 ID # = 4003
 Initial frame = 2041
+Width = 655360
+Height = 655360
 Bits = SPECIAL+COUNTITEM
 
 Thing 156 (Gold Chalice)
 ID # = 4004
 Initial frame = 2042
+Width = 655360
+Height = 655360
 Bits = SPECIAL+COUNTITEM
 
 Thing 157 (Gilded Chest)
 ID # = 4005
 Initial frame = 2043
+Width = 655360
+Height = 655360
 Bits = SPECIAL+COUNTITEM
 
 Thing 158 (Gilded Crown)
 ID # = 4006
 Initial frame = 2044
+Width = 655360
+Height = 655360
 Bits = SPECIAL+COUNTITEM
 
 Thing 159 (Hans Grosse DeathCam)
@@ -485,7 +561,7 @@ Duration = 5
 Next frame = 1095
 
 Frame 236
-Sprite subnumber = 14
+Sprite subnumber = 13
 
 Frame 237
 Sprite subnumber = 13
@@ -499,6 +575,19 @@ Sprite subnumber = 11
 Frame 240
 Sprite subnumber = 10
 Next frame = 1096
+
+Frame 266
+Sprite number = 44
+Sprite subnumber = 32773
+
+Frame 267
+Sprite number = 44
+Sprite subnumber = 32774
+
+Frame 268
+Sprite number = 44
+Sprite subnumber = 32773
+Next frame = 587
 
 Frame 321
 Duration = 1
@@ -880,8 +969,66 @@ Sprite subnumber = 4
 Duration = 5
 Next frame = 558
 
+Frame 585
+Sprite subnumber = 0
+Duration = 1
+Next frame = 585
+
+Frame 587
+Sprite subnumber = 1
+Duration = 2
+
+Frame 588
+Sprite subnumber = 1
+Duration = 2
+Next frame = 589
+
+Frame 589
+Sprite subnumber = 2
+Duration = 2
+
+Frame 590
+Sprite subnumber = 2
+Duration = 2
+
+Frame 591
+Sprite subnumber = 3
+Duration = 2
+
+Frame 592
+Sprite subnumber = 3
+Duration = 2
+Next frame = 593
+
+Frame 593
+Sprite subnumber = 4
+Duration = 2
+
+Frame 594
+Sprite subnumber = 4
+Duration = 2
+
+Frame 595
+Sprite subnumber = 9
+
+Frame 596
+Sprite subnumber = 10
+
+Frame 597
+Sprite subnumber = 11
+
+Frame 598
+Sprite subnumber = 12
+
+Frame 599
+Sprite subnumber = 13
+Duration = 0
+
+Frame 600
+Sprite subnumber = 13
+Duration = -1
+
 Frame 726
-Sprite number = 30
 Duration = 1
 Next frame = 726
 
@@ -889,54 +1036,42 @@ Frame 727
 Sprite number = 30
 
 Frame 728
-Sprite number = 30
 Sprite subnumber = 1
 
 Frame 729
-Sprite number = 30
 Sprite subnumber = 1
 
 Frame 730
-Sprite number = 30
 Sprite subnumber = 2
 
 Frame 731
-Sprite number = 30
 Sprite subnumber = 2
 
 Frame 732
-Sprite number = 30
 Sprite subnumber = 3
 
 Frame 733
-Sprite number = 30
 Sprite subnumber = 3
 
 Frame 734
-Sprite number = 30
 Sprite subnumber = 4
 
 Frame 735
-Sprite number = 30
 Sprite subnumber = 4
 
 Frame 736
-Sprite number = 30
 Sprite subnumber = 5
 Duration = 5
 
 Frame 737
-Sprite number = 30
 Sprite subnumber = 6
 Duration = 5
 
 Frame 738
-Sprite number = 30
 Sprite subnumber = 7
 Duration = 5
 
 Frame 739
-Sprite number = 30
 Sprite subnumber = 6
 Duration = 5
 Next frame = 728
@@ -951,33 +1086,26 @@ Frame 742
 Sprite number = 30
 
 Frame 743
-Sprite number = 30
 Sprite subnumber = 8
 
 Frame 744
-Sprite number = 30
 Sprite subnumber = 9
 
 Frame 745
-Sprite number = 30
 Sprite subnumber = 10
 
 Frame 746
-Sprite number = 30
 Sprite subnumber = 11
 
 Frame 747
-Sprite number = 30
 Sprite subnumber = 12
 
 Frame 748
-Sprite number = 30
 Sprite subnumber = 13
 Duration = 5
 Next frame = 749
 
 Frame 749
-Sprite number = 30
 Sprite subnumber = 14
 Duration = -1
 Next frame = 0
@@ -1007,25 +1135,132 @@ Frame 757
 Sprite number = 30
 
 Frame 758
-Sprite number = 30
 Sprite subnumber = 14
 
 Frame 759
-Sprite number = 30
 Sprite subnumber = 13
 
 Frame 760
-Sprite number = 30
 Sprite subnumber = 12
 
 Frame 761
-Sprite number = 30
 Sprite subnumber = 11
 
 Frame 762
-Sprite number = 30
 Sprite subnumber = 10
 Next frame = 1098
+
+Frame 842
+Duration = -1
+
+Frame 857
+Duration = -1
+
+Frame 886
+Sprite number = 96
+Sprite subnumber = 2
+
+Frame 906
+Sprite number = 96
+Sprite subnumber = 19
+
+Frame 907
+Sprite number = 96
+Sprite subnumber = 32771
+
+Frame 908
+Sprite number = 96
+Sprite subnumber = 32772
+
+Frame 909
+Sprite number = 96
+Sprite subnumber = 5
+
+Frame 910
+Sprite number = 96
+Sprite subnumber = 7
+
+Frame 911
+Sprite number = 96
+Sprite subnumber = 21
+
+Frame 913
+Sprite number = 96
+Sprite subnumber = 8
+
+Frame 914
+Sprite number = 96
+Sprite subnumber = 12
+
+Frame 916
+Sprite number = 96
+Sprite subnumber = 20
+
+Frame 917
+Sprite number = 96
+Sprite subnumber = 10
+Duration = -1
+Next frame = 0
+
+Frame 921
+Sprite number = 96
+Sprite subnumber = 32779
+Duration = -1
+Next frame = 0
+
+Frame 924
+Sprite number = 96
+Sprite subnumber = 9
+Duration = -1
+Next frame = 0
+
+Frame 926
+Sprite number = 96
+Sprite subnumber = 13
+Duration = -1
+Next frame = 0
+
+Frame 930
+Sprite number = 96
+Sprite subnumber = 32782
+Duration = -1
+Next frame = 0
+
+Frame 934
+Sprite number = 96
+Sprite subnumber = 15
+Duration = -1
+Next frame = 0
+
+Frame 938
+Sprite number = 96
+Sprite subnumber = 16
+Duration = -1
+Next frame = 0
+
+Frame 942
+Sprite number = 96
+Sprite subnumber = 17
+Duration = -1
+Next frame = 0
+
+Frame 946
+Sprite number = 96
+Sprite subnumber = 18
+Duration = -1
+Next frame = 0
+
+Frame 959
+Sprite number = 96
+Sprite subnumber = 0
+Duration = -1
+Next frame = 0
+
+Frame 963
+Sprite number = 96
+Sprite subnumber = 1
+Duration = -1
+Next frame = 0
 
 Frame 1022
 Sprite number = 7
@@ -1033,6 +1268,7 @@ Duration = 0
 
 Frame 1023
 Sprite number = 7
+Sprite subnumber = 2
 Duration = 4
 Next frame = 54
 
@@ -1115,7 +1351,7 @@ Next frame = 1
 
 Frame 1095
 Sprite number = 30
-Sprite subnumber = 14
+Sprite subnumber = 13
 Next frame = 0
 
 Frame 1096
@@ -1131,7 +1367,7 @@ Duration = 5
 Next frame = 176
 
 Frame 1098
-Sprite number = 30
+Sprite number = 51
 Sprite subnumber = 9
 Duration = 5
 Next frame = 728
@@ -1362,6 +1598,12 @@ Sprite number = 12
 Sprite subnumber = 1
 Duration = 8
 Next frame = 78
+
+Frame 1140
+Sprite number = 44
+Sprite subnumber = 8
+Duration = 10
+Next frame = 587
 
 Frame 2000
 Duration = 1
@@ -1645,8 +1887,14 @@ Cheat 0
 Chainsaw = iddestiny
 
 Misc 0
+Blue Armor Class = 1
 BFG Cells/Shot = 19
+IDFA Armor = 100
+IDFA Armor Class = 1
+IDKFA Armor = 100
+IDKFA Armor Class = 1
 Max Armor = 100
+Megasphere Health = 100
 Initial Health = 75
 
 [CODEPTR]
@@ -1689,6 +1937,14 @@ FRAME 545 = KeenDie
 FRAME 566 = TroopAttack
 FRAME 567 = TroopAttack
 FRAME 568 = TroopAttack
+FRAME 587 = VileChase
+FRAME 588 = VileChase
+FRAME 589 = VileChase
+FRAME 590 = VileChase
+FRAME 591 = VileChase
+FRAME 592 = VileChase
+FRAME 593 = VileChase
+FRAME 594 = VileChase
 FRAME 738 = PosAttack
 FRAME 1022 = FireCGun
 FRAME 1023 = OpenShotgun2
@@ -1734,6 +1990,7 @@ FRAME 1134 = FirePlasma
 FRAME 1135 = FirePlasma
 FRAME 1136 = FirePlasma
 FRAME 1137 = FirePlasma
+FRAME 1140 = Pain
 FRAME 2001 = Spawn
 FRAME 2002 = Spawn
 FRAME 2003 = Spawn
