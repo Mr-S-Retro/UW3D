@@ -50,9 +50,32 @@ Death sound = 100
 Action sound = 0
 Gib health = -100
 
+Thing 12 (Scientist)
+ID # = 3006
+Initial frame = 585
+Hit points = 30
+First moving frame = 587
+Alert sound = 0
+Attack sound = 51
+Injury frame = 1140
+Pain chance = 256
+Close attack frame = 0
+Far attack frame = 0
+Death frame = 595
+Exploding frame = 0
+Death sound = 65
+Speed = 15
+Width = 1048576
+Mass = 50
+Missile damage = 3
+Action sound = 0
+Respawn frame = 0
+Gib health = -100
+
 Thing 13 (Killer Dog)
 Hit points = 10
 Pain chance = 0
+Height = 1507328.0
 Gib health = -10
 
 Thing 14 (Spectre)
@@ -74,15 +97,26 @@ Mass = 400
 Action sound = 0
 Bits = NOGRAVITY+FLOAT+SHOOTABLE+COUNTKILL+SOLID
 
-Thing 19 (Scientist)
-Hit points = 30
-Injury frame = 1140
-Pain sound = 27
+Thing 19 (EMPTY)
+Initial frame = 0
+Hit points = 0
+First moving frame = 0
+Reaction time = 0
+Attack sound = 0
+Injury frame = 0
+Pain chance = 0
+Pain sound = 0
 Far attack frame = 0
-Death sound = 65
-Speed = 15
+Death frame = 0
+Death sound = 0
+Speed = 0
+Width = 0
+Height = 0
+Mass = 0
+Missile damage = 0
 Action sound = 0
 Bits = COUNTKILL+SHOOTABLE+SOLID
+Gib health = 0
 
 Thing 24 (Officer)
 Reaction time = 4
@@ -105,6 +139,8 @@ Thing 36 (Spear of Destiny projectile)
 Thing 47 (Armor helmet)
 Width = 4194304
 Bits = SPECIAL
+
+Thing 54 (Food)
 
 Thing 56 (Life sphere)
 
@@ -141,7 +177,7 @@ Thing 82 (Table & Chairs)
 
 Thing 83 (Lamp)
 
-Thing 84 (Candelier)
+Thing 84 (Chandelier)
 Bits = SPAWNCEILING+NOGRAVITY
 
 Thing 85 (Hanging Skeleton)
@@ -2031,7 +2067,16 @@ FRAME 2039 = Spawn
 
 [STRINGS]
 NIGHTMARE = This skill is for Supreme\nElites only! Choose at\nyour own risk...\n\npress y or n.
+GOTARMOR = CHEATER!!!
+GOTMEGA = CHEATER!!!
 GOTARMBONUS = Armor
+GOTSTIM = Ate some food.
+GOTBLUECARD = Picked up a blue key.
+GOTYELWCARD = Picked up a yellow key.
+GOTREDCARD = Picked up a red key.
+GOTBLUESKUL = Picked up a rusty blue key.
+GOTYELWSKUL = Picked up a rusty yellow key.
+GOTREDSKULL = Picked up a rusty red key.
 GOTBFG9000 = You got the Flamethrower! Oh yeah...
 GOTCHAINGUN = You got the MP40!
 GOTCHAINSAW = You got the Spear of Destiny!
@@ -2039,3 +2084,6 @@ GOTLAUNCHER = You got the Chaingun!
 GOTPLASMA = You got the Napalm Launcher!
 GOTSHOTGUN = You got the Winchester Rifle!
 GOTSHOTGUN2 = You got the M30 Double Barrel Shotgun!
+PD_BLUEC = You need a blue key to open this door
+PD_REDC = You need a red key to open this door
+PD_YELLOWC = You need a yellow key to open this door
