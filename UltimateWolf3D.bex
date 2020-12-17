@@ -12,6 +12,7 @@ Thing 2 (Guard)
 Hit points = 25
 Injury frame = 188
 Exploding frame = 189
+Speed = 10
 Action sound = 0
 Gib health = -25
 
@@ -21,6 +22,7 @@ Alert sound = 44
 Injury frame = 221
 Exploding frame = 222
 Death sound = 68
+Speed = 12
 Action sound = 0
 
 Thing 6 (Mutant)
@@ -30,6 +32,7 @@ Injury frame = 344
 Pain chance = 120
 Close attack frame = 0
 Far attack frame = 335
+Speed = 16
 Action sound = 0
 Gib health = -65
 
@@ -37,6 +40,7 @@ Thing 9 (Doctor Shabbs)
 Injury frame = 387
 Pain chance = 0
 Pain sound = 0
+Speed = 10
 Width = 2621440
 Height = 3670016
 Action sound = 0
@@ -48,7 +52,7 @@ Alert sound = 56
 Death frame = 1139
 Speed = 1966080
 Missile damage = 20
-Bits = NOBLOCKMAP+MISSILE+TRANSLUCENT+DROPOFF
+Bits = MISSILE+DROPOFF+TRANSLUCENT+NOBLOCKMAP
 
 Thing 11 (Schutzstaffel)
 Hit points = 100
@@ -57,7 +61,7 @@ Attack sound = 5
 Injury frame = 421
 Exploding frame = 422
 Death sound = 102
-Speed = 10
+Speed = 12
 Action sound = 0
 Gib health = -100
 
@@ -86,10 +90,12 @@ Gib health = -100
 Thing 13 (Killer Dog)
 Hit points = 10
 Pain chance = 0
+Speed = 14
 Gib health = -10
 
 Thing 14 (Spectre)
 Hit points = 10
+Speed = 14
 Gib health = -10
 
 Thing 15 (Otto Giftmacher)
@@ -100,7 +106,7 @@ Far attack frame = 511
 Death frame = 515
 Speed = 12
 Width = 2621440
-Bits = SOLID+COUNTKILL+SHOOTABLE
+Bits = COUNTKILL+SOLID+SHOOTABLE
 Respawn frame = 0
 Gib health = -4000
 
@@ -120,7 +126,7 @@ Pain chance = 0
 Pain sound = 0
 Mass = 400
 Action sound = 0
-Bits = NOGRAVITY+COUNTKILL+FLOAT+SOLID+SHOOTABLE
+Bits = SOLID+SHOOTABLE+COUNTKILL+FLOAT+NOGRAVITY
 
 Thing 19 (EMPTY)
 Initial frame = 0
@@ -140,7 +146,7 @@ Height = 0
 Mass = 0
 Missile damage = 0
 Action sound = 0
-Bits = SOLID+COUNTKILL+SHOOTABLE
+Bits = COUNTKILL+SOLID+SHOOTABLE
 Gib health = 0
 
 Thing 20 (Gretel Grösse)
@@ -154,10 +160,10 @@ Alert sound = 48
 Pain chance = 0
 Pain sound = 0
 Death sound = 80
-Speed = 12
+Speed = 10
 Height = 3670016
 Action sound = 0
-Bits = SOLID+COUNTKILL+NOBLOOD+SHOOTABLE
+Bits = COUNTKILL+SOLID+NOBLOOD+SHOOTABLE
 
 Thing 23 (Hitler)
 Hit points = 3000
@@ -168,10 +174,10 @@ Pain sound = 28
 Far attack frame = 710
 Death frame = 715
 Death sound = 71
-Speed = 15
+Speed = 14
 Width = 2621440
 Action sound = 0
-Bits = SOLID+COUNTKILL+SHOOTABLE
+Bits = COUNTKILL+SOLID+SHOOTABLE
 Respawn frame = 0
 Gib health = -3000
 
@@ -181,7 +187,7 @@ Reaction time = 4
 Attack sound = 1
 Injury frame = 743
 Death sound = 87
-Speed = 12
+Speed = 14
 Action sound = 0
 
 Thing 25 (General Fettgesicht)
@@ -198,7 +204,7 @@ Speed = 15
 Width = 2621440
 Height = 3670016
 Mass = 1000
-Bits = SOLID+COUNTKILL+SHOOTABLE
+Bits = COUNTKILL+SOLID+SHOOTABLE
 Gib health = -8000
 
 Thing 32 (Fake Hitler fireball)
@@ -206,13 +212,29 @@ Initial frame = 108
 Alert sound = 92
 Death frame = 110
 
-Thing 35 (Plasma projectile)
+Thing 34 (Napalm Projectile)
+Initial frame = 113
+
+Thing 35 (Dummy Projectile (takes Ammo))
 Initial frame = 0
 Alert sound = 0
 Death frame = 0
 Death sound = 0
+Missile damage = 0
 
-Thing 36 (Spear of Destiny projectile)
+Thing 36 (Medical Artifact Dummy Projectile)
+Death frame = 115
+Speed = 0
+Missile damage = 0
+
+Thing 37 (Enemy Rocket in flight)
+Alert sound = 14
+Death frame = 127
+Death sound = 82
+Speed = 1310720
+Width = 720896
+Missile damage = 20
+Bits = MISSILE+NOGRAVITY+DROPOFF+NOBLOCKMAP
 
 Thing 47 (Armor helmet)
 Width = 4194304
@@ -236,7 +258,7 @@ Thing 73 (Flammenwerfer 35)
 
 Thing 74 (MP40 Machine Gun)
 
-Thing 75 (Spear of Destiny)
+Thing 75 (Medical Artifact)
 
 Thing 76 (Chaingun)
 
@@ -301,15 +323,17 @@ Thing 113 (Dead American Troop)
 
 Thing 114 (Dead Soldier)
 
-Thing 141 (Beta Plasma 1)
+Thing 141 (Flamethrower Projectile 1)
 Alert sound = 92
-Bits = NOGRAVITY+MISSILE+DROPOFF+NOBLOCKMAP+TRANSLUCENT
+Death frame = 1046
+Bits = DROPOFF+NOGRAVITY+TRANSLUCENT+NOBLOCKMAP+MISSILE
 
-Thing 142 (Beta Plasma 2)
+Thing 142 (Flamethrower Projectile 2)
 Initial frame = 1042
 Alert sound = 92
-Death frame = 1044
-Bits = NOGRAVITY+MISSILE+DROPOFF+NOBLOCKMAP+TRANSLUCENT
+Death frame = 1046
+Width = 851968.0
+Bits = DROPOFF+NOGRAVITY+TRANSLUCENT+NOBLOCKMAP+MISSILE
 
 Thing 151 (25 Armor)
 Initial frame = 2000
@@ -337,28 +361,28 @@ ID # = 4003
 Initial frame = 2041
 Width = 655360
 Height = 655360
-Bits = SPECIAL+COUNTITEM
+Bits = COUNTITEM+SPECIAL
 
 Thing 156 (Gold Chalice)
 ID # = 4004
 Initial frame = 2042
 Width = 655360
 Height = 655360
-Bits = SPECIAL+COUNTITEM
+Bits = COUNTITEM+SPECIAL
 
 Thing 157 (Gilded Chest)
 ID # = 4005
 Initial frame = 2043
 Width = 655360
 Height = 655360
-Bits = SPECIAL+COUNTITEM
+Bits = COUNTITEM+SPECIAL
 
 Thing 158 (Gilded Crown)
 ID # = 4006
 Initial frame = 2044
 Width = 655360
 Height = 655360
-Bits = SPECIAL+COUNTITEM
+Bits = COUNTITEM+SPECIAL
 
 Thing 159 (Hans Grosse DeathCam)
 ID # = 4100
@@ -512,8 +536,29 @@ Sprite subnumber = 1
 Duration = 2
 Next frame = 62
 
+Frame 67
+Sprite subnumber = 0
+
+Frame 68
+Sprite subnumber = 0
+
+Frame 69
+Sprite subnumber = 0
+
 Frame 70
-Duration = 2
+Sprite subnumber = 0
+
+Frame 71
+Duration = 1
+
+Frame 72
+Sprite subnumber = 0
+Duration = 1
+
+Frame 73
+Sprite subnumber = 0
+Duration = 1
+Next frame = 1159
 
 Frame 76
 Duration = 2
@@ -591,7 +636,75 @@ Frame 112
 Sprite number = 18
 
 Frame 113
-Sprite number = 18
+Sprite number = 22
+Sprite subnumber = 32768
+Next frame = 114
+
+Frame 114
+Sprite subnumber = 32769
+Duration = 4
+Next frame = 113
+
+Frame 115
+Sprite number = 138
+Sprite subnumber = 0
+Duration = 0
+Unknown 1 = 46
+
+Frame 116
+Sprite number = 138
+Sprite subnumber = 0
+Duration = 0
+Next frame = 117
+Unknown 1 = 46
+
+Frame 117
+Sprite number = 138
+Sprite subnumber = 0
+Duration = 0
+Unknown 1 = 46
+
+Frame 118
+Sprite number = 138
+Sprite subnumber = 0
+Duration = 0
+Unknown 1 = 46
+
+Frame 119
+Sprite number = 138
+Sprite subnumber = 0
+Duration = 0
+Unknown 1 = 46
+
+Frame 120
+Sprite number = 138
+Sprite subnumber = 0
+Duration = 0
+Unknown 1 = 46
+
+Frame 121
+Sprite number = 138
+Sprite subnumber = 0
+Duration = 0
+Unknown 1 = 46
+
+Frame 122
+Sprite number = 138
+Sprite subnumber = 0
+Duration = 0
+Next frame = 1204
+Unknown 1 = 46
+
+Frame 127
+Sprite subnumber = 32770
+Duration = 6
+
+Frame 128
+Sprite subnumber = 32771
+
+Frame 129
+Sprite subnumber = 32772
+Duration = 6
 
 Frame 174
 Duration = 1
@@ -1605,6 +1718,10 @@ Sprite subnumber = 10
 Duration = -1
 Next frame = 0
 
+Frame 667
+Duration = 1
+Next frame = 667
+
 Frame 674
 Duration = 1
 Next frame = 674
@@ -2019,31 +2136,30 @@ Duration = 4
 Next frame = 54
 
 Frame 1042
-Sprite number = 18
+Duration = 4
 
 Frame 1043
-Sprite number = 18
+Duration = 4
 Next frame = 1044
 
 Frame 1044
-Sprite number = 18
 Sprite subnumber = 32768
 
 Frame 1045
-Sprite number = 18
 Sprite subnumber = 32769
+Next frame = 1042
 
 Frame 1046
-Sprite number = 18
 Sprite subnumber = 32770
+Duration = 3
 
 Frame 1047
-Sprite number = 18
 Sprite subnumber = 32771
+Duration = 3
 
 Frame 1048
-Sprite number = 18
-Sprite subnumber = 32771
+Sprite subnumber = 32772
+Duration = 3
 
 Frame 1049
 Sprite number = 20
@@ -2361,7 +2477,7 @@ Frame 1141
 Sprite number = 36
 Sprite subnumber = 32773
 Duration = 3
-Next frame = 0
+Next frame = 1158
 
 Frame 1142
 Sprite number = 37
@@ -2457,19 +2573,20 @@ Sprite subnumber = 18
 Next frame = 0
 
 Frame 1158
-Sprite number = 49
-Sprite subnumber = 18
-Next frame = 1159
+Sprite number = 36
+Sprite subnumber = 32774
+Duration = 3
+Next frame = 0
 
 Frame 1159
-Sprite number = 49
-Sprite subnumber = 18
+Sprite number = 11
+Duration = 1
 Next frame = 1160
 
 Frame 1160
-Sprite number = 49
-Sprite subnumber = 18
-Next frame = 1161
+Sprite number = 11
+Duration = 1
+Next frame = 1179
 
 Frame 1161
 Sprite number = 40
@@ -2574,11 +2691,133 @@ Sprite subnumber = 11
 Next frame = 0
 
 Frame 1179
-Sprite number = 52
+Sprite number = 11
+Duration = 1
 Next frame = 1180
 
 Frame 1180
-Sprite number = 52
+Sprite number = 11
+Duration = 1
+Next frame = 1181
+
+Frame 1181
+Sprite number = 11
+Duration = 1
+Next frame = 1182
+
+Frame 1182
+Sprite number = 11
+Duration = 1
+Next frame = 1183
+
+Frame 1183
+Sprite number = 11
+Duration = 1
+Next frame = 1184
+
+Frame 1184
+Sprite number = 11
+Duration = 1
+Next frame = 1185
+
+Frame 1185
+Sprite number = 11
+Duration = 1
+Next frame = 1186
+
+Frame 1186
+Sprite number = 11
+Duration = 1
+Next frame = 1187
+
+Frame 1187
+Sprite number = 11
+Duration = 1
+Next frame = 1188
+
+Frame 1188
+Sprite number = 11
+Duration = 1
+Next frame = 1189
+
+Frame 1189
+Sprite number = 11
+Duration = 1
+Next frame = 1190
+
+Frame 1190
+Sprite number = 11
+Duration = 1
+Next frame = 1191
+
+Frame 1191
+Sprite number = 11
+Duration = 1
+Next frame = 1192
+
+Frame 1192
+Sprite number = 11
+Duration = 1
+Next frame = 1193
+
+Frame 1193
+Sprite number = 11
+Duration = 1
+Next frame = 1194
+
+Frame 1194
+Sprite number = 11
+Duration = 1
+Next frame = 1195
+
+Frame 1195
+Sprite number = 11
+Duration = 1
+Next frame = 1196
+
+Frame 1196
+Sprite number = 11
+Duration = 1
+Next frame = 1197
+
+Frame 1197
+Sprite number = 11
+Duration = 1
+Next frame = 1198
+
+Frame 1198
+Sprite number = 11
+Duration = 1
+Next frame = 1199
+
+Frame 1199
+Sprite number = 11
+Duration = 1
+Next frame = 1200
+
+Frame 1200
+Sprite number = 11
+Duration = 1
+Next frame = 1201
+
+Frame 1201
+Sprite number = 11
+Duration = 1
+Next frame = 1202
+
+Frame 1202
+Sprite number = 11
+Duration = 1
+Next frame = 1203
+
+Frame 1203
+Sprite number = 11
+Duration = 1
+Next frame = 67
+
+Frame 1204
+Duration = 0
+Unknown 1 = 46
 
 Frame 2000
 Duration = 1
@@ -2843,7 +3082,7 @@ Firing frame = 1090
 Weapon 6 (Flammenwerfer 35)
 Ammo type = 3
 
-Weapon 7 (Spear Of Destiny)
+Weapon 7 (Medical Artifact)
 Ammo type = 2
 
 Weapon 8 (M30 Luftwaffe Double Barreled Shotgun)
@@ -2853,6 +3092,7 @@ Max ammo = 100
 Per ammo = 20
 
 Ammo 2 (Magic)
+Per ammo = 30
 
 Ammo 3 (Gasoline)
 Max ammo = 100
@@ -2863,7 +3103,7 @@ Chainsaw = iddestiny
 
 Misc 0
 Blue Armor Class = 1
-BFG Cells/Shot = 19
+BFG Cells/Shot = 1
 IDFA Armor = 100
 IDFA Armor Class = 1
 IDKFA Armor = 100
@@ -2882,10 +3122,21 @@ FRAME 61 = FireCGun
 FRAME 64 = Light2
 FRAME 65 = LoadShotgun2
 FRAME 66 = LoadShotgun2
+FRAME 71 = FireBFG
+FRAME 72 = FirePlasma
+FRAME 73 = FirePlasma
 FRAME 77 = GunFlash
 FRAME 84 = FireOldBFG
 FRAME 85 = FireOldBFG
 FRAME 86 = ReFire
+FRAME 115 = Spawn
+FRAME 116 = Spawn
+FRAME 117 = Spawn
+FRAME 118 = Spawn
+FRAME 119 = Spawn
+FRAME 120 = Spawn
+FRAME 121 = Spawn
+FRAME 122 = Spawn
 FRAME 185 = FaceTarget
 FRAME 186 = PosAttack
 FRAME 187 = FaceTarget
@@ -2900,7 +3151,7 @@ FRAME 201 = Chase
 FRAME 218 = FaceTarget
 FRAME 219 = SPosAttack
 FRAME 227 = FaceTarget
-FRAME 228 = CyberAttack
+FRAME 228 = BspiAttack
 FRAME 229 = PosAttack
 FRAME 230 = PosAttack
 FRAME 231 = PosAttack
@@ -2942,7 +3193,7 @@ FRAME 508 = Chase
 FRAME 509 = Chase
 FRAME 510 = Chase
 FRAME 511 = FaceTarget
-FRAME 512 = CyberAttack
+FRAME 512 = BspiAttack
 FRAME 513 = FaceTarget
 FRAME 514 = NULL
 FRAME 515 = Scream
@@ -3048,12 +3299,40 @@ FRAME 1147 = BrainDie
 FRAME 1148 = Pain
 FRAME 1149 = Scream
 FRAME 1157 = BrainDie
+FRAME 1159 = FirePlasma
+FRAME 1160 = FirePlasma
 FRAME 1161 = Scream
 FRAME 1166 = BrainDie
 FRAME 1167 = Scream
 FRAME 1172 = BrainDie
 FRAME 1173 = Scream
 FRAME 1178 = BrainDie
+FRAME 1179 = FirePlasma
+FRAME 1180 = FirePlasma
+FRAME 1181 = FirePlasma
+FRAME 1182 = FirePlasma
+FRAME 1183 = FirePlasma
+FRAME 1184 = FirePlasma
+FRAME 1185 = FirePlasma
+FRAME 1186 = FirePlasma
+FRAME 1187 = FirePlasma
+FRAME 1188 = FirePlasma
+FRAME 1189 = FirePlasma
+FRAME 1190 = FirePlasma
+FRAME 1191 = FirePlasma
+FRAME 1192 = FirePlasma
+FRAME 1193 = FirePlasma
+FRAME 1194 = FirePlasma
+FRAME 1195 = FirePlasma
+FRAME 1196 = FirePlasma
+FRAME 1197 = FirePlasma
+FRAME 1198 = FirePlasma
+FRAME 1199 = FirePlasma
+FRAME 1200 = FirePlasma
+FRAME 1201 = FirePlasma
+FRAME 1202 = FirePlasma
+FRAME 1203 = FirePlasma
+FRAME 1204 = Spawn
 FRAME 2001 = Spawn
 FRAME 2002 = Spawn
 FRAME 2003 = Spawn
@@ -3106,7 +3385,7 @@ GOTYELWSKUL = Picked up a rusty yellow key.
 GOTREDSKULL = Picked up a rusty red key.
 GOTBFG9000 = You got the Flamethrower! Oh yeah...
 GOTCHAINGUN = You got the MP40!
-GOTCHAINSAW = You got the Spear of Destiny!
+GOTCHAINSAW = You got the Medical Artifact!
 GOTLAUNCHER = You got the Chaingun!
 GOTPLASMA = You got the Napalm Launcher!
 GOTSHOTGUN = You got the Winchester Rifle!
