@@ -11,7 +11,7 @@ This Doom mod promises to be the best Wolfenstein that Wolfenstein can be! It ad
 But, "new" and "enhanced" are not specific at all, are they? We know that, and that's why we have included a list with changes right below!
 
 - The Fist has been replaced by the Knife.
-- The Chainsaw has been replaced by the Spear of Destiny (yes, you finally get to use it!).
+- The Chainsaw has been replaced by a... peculiar Artifact.
 - The Pistol is, well, still a Pistol, but with the Wolf3D style. Same goes for the Shotgun and Super Shotgun.
 - The Chaingun has been replaced with an MP40, with the same fire rate. Where's the Chaingun, then?
 - Well, the Rocket Launcher has been replaced by the Chaingun, now TWICE as fast!
