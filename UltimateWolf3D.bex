@@ -52,7 +52,7 @@ Alert sound = 56
 Death frame = 1139
 Speed = 1966080
 Missile damage = 20
-Bits = MISSILE+DROPOFF+TRANSLUCENT+NOBLOCKMAP
+Bits = DROPOFF+TRANSLUCENT+MISSILE+NOBLOCKMAP
 
 Thing 11 (Schutzstaffel)
 Hit points = 100
@@ -106,7 +106,7 @@ Far attack frame = 511
 Death frame = 515
 Speed = 12
 Width = 2621440
-Bits = COUNTKILL+SOLID+SHOOTABLE
+Bits = COUNTKILL+SHOOTABLE+SOLID
 Respawn frame = 0
 Gib health = -4000
 
@@ -126,7 +126,7 @@ Pain chance = 0
 Pain sound = 0
 Mass = 400
 Action sound = 0
-Bits = SOLID+SHOOTABLE+COUNTKILL+FLOAT+NOGRAVITY
+Bits = NOGRAVITY+SOLID+SHOOTABLE+COUNTKILL+FLOAT
 
 Thing 19 (EMPTY)
 Initial frame = 0
@@ -146,7 +146,7 @@ Height = 0
 Mass = 0
 Missile damage = 0
 Action sound = 0
-Bits = COUNTKILL+SOLID+SHOOTABLE
+Bits = COUNTKILL+SHOOTABLE+SOLID
 Gib health = 0
 
 Thing 20 (Gretel Grösse)
@@ -163,7 +163,7 @@ Death sound = 80
 Speed = 10
 Height = 3670016
 Action sound = 0
-Bits = COUNTKILL+SOLID+NOBLOOD+SHOOTABLE
+Bits = COUNTKILL+NOBLOOD+SHOOTABLE+SOLID
 
 Thing 23 (Hitler)
 Hit points = 3000
@@ -177,7 +177,7 @@ Death sound = 71
 Speed = 14
 Width = 2621440
 Action sound = 0
-Bits = COUNTKILL+SOLID+SHOOTABLE
+Bits = COUNTKILL+SHOOTABLE+SOLID
 Respawn frame = 0
 Gib health = -3000
 
@@ -204,7 +204,7 @@ Speed = 15
 Width = 2621440
 Height = 3670016
 Mass = 1000
-Bits = COUNTKILL+SOLID+SHOOTABLE
+Bits = COUNTKILL+SHOOTABLE+SOLID
 Gib health = -8000
 
 Thing 32 (Fake Hitler fireball)
@@ -234,7 +234,7 @@ Death sound = 82
 Speed = 1310720
 Width = 720896
 Missile damage = 20
-Bits = MISSILE+NOGRAVITY+DROPOFF+NOBLOCKMAP
+Bits = DROPOFF+NOGRAVITY+MISSILE+NOBLOCKMAP
 
 Thing 47 (Armor helmet)
 Width = 4194304
@@ -281,7 +281,7 @@ Thing 84 (Chandelier)
 Bits = NOGRAVITY+SPAWNCEILING
 
 Thing 85 (Hanging Skeleton)
-Bits = SOLID+NOGRAVITY+SPAWNCEILING
+Bits = SOLID+SPAWNCEILING+NOGRAVITY
 
 Thing 86 (Pillar)
 
@@ -307,10 +307,10 @@ Bits = NOGRAVITY+SPAWNCEILING
 Thing 95 (Knight's Armor)
 
 Thing 96 (Hanging Cage)
-Bits = SOLID+NOGRAVITY+SPAWNCEILING
+Bits = SOLID+SPAWNCEILING+NOGRAVITY
 
 Thing 97 (Hanging Cage With Spooks)
-Bits = SOLID+NOGRAVITY+SPAWNCEILING
+Bits = SOLID+SPAWNCEILING+NOGRAVITY
 
 Thing 98 (Pile O' Bones)
 Bits = 0
@@ -326,14 +326,13 @@ Thing 114 (Dead Soldier)
 Thing 141 (Flamethrower Projectile 1)
 Alert sound = 92
 Death frame = 1046
-Bits = DROPOFF+NOGRAVITY+TRANSLUCENT+NOBLOCKMAP+MISSILE
+Bits = TRANSLUCENT+MISSILE+NOBLOCKMAP+DROPOFF+NOGRAVITY
 
 Thing 142 (Flamethrower Projectile 2)
 Initial frame = 1042
 Alert sound = 92
 Death frame = 1046
-Width = 851968.0
-Bits = DROPOFF+NOGRAVITY+TRANSLUCENT+NOBLOCKMAP+MISSILE
+Bits = TRANSLUCENT+MISSILE+NOBLOCKMAP+DROPOFF+NOGRAVITY
 
 Thing 151 (25 Armor)
 Initial frame = 2000
@@ -361,28 +360,28 @@ ID # = 4003
 Initial frame = 2041
 Width = 655360
 Height = 655360
-Bits = COUNTITEM+SPECIAL
+Bits = SPECIAL+COUNTITEM
 
 Thing 156 (Gold Chalice)
 ID # = 4004
 Initial frame = 2042
 Width = 655360
 Height = 655360
-Bits = COUNTITEM+SPECIAL
+Bits = SPECIAL+COUNTITEM
 
 Thing 157 (Gilded Chest)
 ID # = 4005
 Initial frame = 2043
 Width = 655360
 Height = 655360
-Bits = COUNTITEM+SPECIAL
+Bits = SPECIAL+COUNTITEM
 
 Thing 158 (Gilded Crown)
 ID # = 4006
 Initial frame = 2044
 Width = 655360
 Height = 655360
-Bits = COUNTITEM+SPECIAL
+Bits = SPECIAL+COUNTITEM
 
 Thing 159 (Hans Grosse DeathCam)
 ID # = 4100
@@ -549,7 +548,8 @@ Frame 70
 Sprite subnumber = 0
 
 Frame 71
-Duration = 1
+Duration = 30
+Next frame = 67
 
 Frame 72
 Sprite subnumber = 0
@@ -648,7 +648,7 @@ Next frame = 113
 Frame 115
 Sprite number = 138
 Sprite subnumber = 0
-Duration = 0
+Duration = 1
 Unknown 1 = 46
 
 Frame 116
@@ -692,7 +692,7 @@ Frame 122
 Sprite number = 138
 Sprite subnumber = 0
 Duration = 0
-Next frame = 1204
+Next frame = 1159
 Unknown 1 = 46
 
 Frame 127
@@ -2579,14 +2579,14 @@ Duration = 3
 Next frame = 0
 
 Frame 1159
-Sprite number = 11
-Duration = 1
+Duration = 0
 Next frame = 1160
+Unknown 1 = 46
 
 Frame 1160
-Sprite number = 11
-Duration = 1
-Next frame = 1179
+Duration = 0
+Next frame = 1204
+Unknown 1 = 46
 
 Frame 1161
 Sprite number = 40
@@ -2817,6 +2817,7 @@ Next frame = 67
 
 Frame 1204
 Duration = 0
+Next frame = 0
 Unknown 1 = 46
 
 Frame 2000
@@ -3103,7 +3104,7 @@ Chainsaw = iddestiny
 
 Misc 0
 Blue Armor Class = 1
-BFG Cells/Shot = 1
+BFG Cells/Shot = 30
 IDFA Armor = 100
 IDFA Armor Class = 1
 IDKFA Armor = 100
@@ -3129,7 +3130,6 @@ FRAME 77 = GunFlash
 FRAME 84 = FireOldBFG
 FRAME 85 = FireOldBFG
 FRAME 86 = ReFire
-FRAME 115 = Spawn
 FRAME 116 = Spawn
 FRAME 117 = Spawn
 FRAME 118 = Spawn
@@ -3299,8 +3299,8 @@ FRAME 1147 = BrainDie
 FRAME 1148 = Pain
 FRAME 1149 = Scream
 FRAME 1157 = BrainDie
-FRAME 1159 = FirePlasma
-FRAME 1160 = FirePlasma
+FRAME 1159 = Spawn
+FRAME 1160 = Spawn
 FRAME 1161 = Scream
 FRAME 1166 = BrainDie
 FRAME 1167 = Scream
