@@ -52,7 +52,7 @@ Alert sound = 56
 Death frame = 1139
 Speed = 1966080
 Missile damage = 20
-Bits = DROPOFF+TRANSLUCENT+MISSILE+NOBLOCKMAP
+Bits = NOBLOCKMAP+MISSILE+TRANSLUCENT+DROPOFF
 
 Thing 11 (Schutzstaffel)
 Hit points = 100
@@ -106,7 +106,7 @@ Far attack frame = 511
 Death frame = 515
 Speed = 12
 Width = 2621440
-Bits = COUNTKILL+SHOOTABLE+SOLID
+Bits = SOLID+COUNTKILL+SHOOTABLE
 Respawn frame = 0
 Gib health = -4000
 
@@ -126,7 +126,7 @@ Pain chance = 0
 Pain sound = 0
 Mass = 400
 Action sound = 0
-Bits = NOGRAVITY+SOLID+SHOOTABLE+COUNTKILL+FLOAT
+Bits = SHOOTABLE+SOLID+FLOAT+COUNTKILL+NOGRAVITY
 
 Thing 19 (EMPTY)
 Initial frame = 0
@@ -146,7 +146,7 @@ Height = 0
 Mass = 0
 Missile damage = 0
 Action sound = 0
-Bits = COUNTKILL+SHOOTABLE+SOLID
+Bits = SOLID+COUNTKILL+SHOOTABLE
 Gib health = 0
 
 Thing 20 (Gretel Grösse)
@@ -163,7 +163,7 @@ Death sound = 80
 Speed = 10
 Height = 3670016
 Action sound = 0
-Bits = COUNTKILL+NOBLOOD+SHOOTABLE+SOLID
+Bits = SHOOTABLE+SOLID+COUNTKILL+NOBLOOD
 
 Thing 23 (Hitler)
 Hit points = 3000
@@ -177,7 +177,7 @@ Death sound = 71
 Speed = 14
 Width = 2621440
 Action sound = 0
-Bits = COUNTKILL+SHOOTABLE+SOLID
+Bits = SOLID+COUNTKILL+SHOOTABLE
 Respawn frame = 0
 Gib health = -3000
 
@@ -204,7 +204,7 @@ Speed = 15
 Width = 2621440
 Height = 3670016
 Mass = 1000
-Bits = COUNTKILL+SHOOTABLE+SOLID
+Bits = SOLID+COUNTKILL+SHOOTABLE
 Gib health = -8000
 
 Thing 32 (Fake Hitler fireball)
@@ -234,7 +234,7 @@ Death sound = 82
 Speed = 1310720
 Width = 720896
 Missile damage = 20
-Bits = DROPOFF+NOGRAVITY+MISSILE+NOBLOCKMAP
+Bits = NOBLOCKMAP+MISSILE+DROPOFF+NOGRAVITY
 
 Thing 47 (Armor helmet)
 Width = 4194304
@@ -278,7 +278,7 @@ Thing 82 (Table & Chairs)
 Thing 83 (Lamp)
 
 Thing 84 (Chandelier)
-Bits = NOGRAVITY+SPAWNCEILING
+Bits = SPAWNCEILING+NOGRAVITY
 
 Thing 85 (Hanging Skeleton)
 Bits = SOLID+SPAWNCEILING+NOGRAVITY
@@ -299,10 +299,10 @@ Thing 91 (Plantless Pot)
 Thing 92 (Table No Chairs)
 
 Thing 93 (Hanging Lamp)
-Bits = NOGRAVITY+SPAWNCEILING
+Bits = SPAWNCEILING+NOGRAVITY
 
 Thing 94 (Hanging Pots And Pans)
-Bits = NOGRAVITY+SPAWNCEILING
+Bits = SPAWNCEILING+NOGRAVITY
 
 Thing 95 (Knight's Armor)
 
@@ -326,13 +326,13 @@ Thing 114 (Dead Soldier)
 Thing 141 (Flamethrower Projectile 1)
 Alert sound = 92
 Death frame = 1046
-Bits = TRANSLUCENT+MISSILE+NOBLOCKMAP+DROPOFF+NOGRAVITY
+Bits = NOBLOCKMAP+DROPOFF+NOGRAVITY+MISSILE+TRANSLUCENT
 
 Thing 142 (Flamethrower Projectile 2)
 Initial frame = 1042
 Alert sound = 92
 Death frame = 1046
-Bits = TRANSLUCENT+MISSILE+NOBLOCKMAP+DROPOFF+NOGRAVITY
+Bits = NOBLOCKMAP+DROPOFF+NOGRAVITY+MISSILE+TRANSLUCENT
 
 Thing 151 (25 Armor)
 Initial frame = 2000
@@ -505,7 +505,18 @@ Frame 52
 Duration = 0
 
 Frame 53
+Duration = 1
 Next frame = 1022
+
+Frame 54
+Sprite subnumber = 0
+
+Frame 55
+Duration = 1
+Next frame = 56
+
+Frame 56
+Duration = 1
 
 Frame 59
 Duration = 2
@@ -2127,12 +2138,12 @@ Next frame = 0
 
 Frame 1022
 Sprite number = 7
-Duration = 0
+Sprite subnumber = 2
 
 Frame 1023
 Sprite number = 7
-Sprite subnumber = 2
-Duration = 4
+Sprite subnumber = 3
+Duration = 2
 Next frame = 54
 
 Frame 1042
@@ -3249,8 +3260,8 @@ FRAME 718 = NULL
 FRAME 719 = Fall
 FRAME 723 = KeenDie
 FRAME 738 = PosAttack
-FRAME 1022 = FireCGun
-FRAME 1023 = OpenShotgun2
+FRAME 1022 = NULL
+FRAME 1023 = NULL
 FRAME 1089 = FireMissile
 FRAME 1090 = Light1
 FRAME 1091 = Light2
