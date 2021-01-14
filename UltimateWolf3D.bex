@@ -52,7 +52,7 @@ Alert sound = 56
 Death frame = 1139
 Speed = 1966080
 Missile damage = 20
-Bits = NOBLOCKMAP+MISSILE+TRANSLUCENT+DROPOFF
+Bits = TRANSLUCENT+DROPOFF+MISSILE+NOBLOCKMAP
 
 Thing 11 (Schutzstaffel)
 Hit points = 100
@@ -106,7 +106,7 @@ Far attack frame = 511
 Death frame = 515
 Speed = 12
 Width = 2621440
-Bits = SOLID+COUNTKILL+SHOOTABLE
+Bits = SOLID+SHOOTABLE+COUNTKILL
 Respawn frame = 0
 Gib health = -4000
 
@@ -126,7 +126,7 @@ Pain chance = 0
 Pain sound = 0
 Mass = 400
 Action sound = 0
-Bits = SHOOTABLE+SOLID+FLOAT+COUNTKILL+NOGRAVITY
+Bits = SOLID+SHOOTABLE+NOGRAVITY+COUNTKILL+FLOAT
 
 Thing 19 (EMPTY)
 Initial frame = 0
@@ -146,7 +146,7 @@ Height = 0
 Mass = 0
 Missile damage = 0
 Action sound = 0
-Bits = SOLID+COUNTKILL+SHOOTABLE
+Bits = SOLID+SHOOTABLE+COUNTKILL
 Gib health = 0
 
 Thing 20 (Gretel Grösse)
@@ -163,7 +163,7 @@ Death sound = 80
 Speed = 10
 Height = 3670016
 Action sound = 0
-Bits = SHOOTABLE+SOLID+COUNTKILL+NOBLOOD
+Bits = SOLID+SHOOTABLE+COUNTKILL+NOBLOOD
 
 Thing 23 (Hitler)
 Hit points = 3000
@@ -177,7 +177,7 @@ Death sound = 71
 Speed = 14
 Width = 2621440
 Action sound = 0
-Bits = SOLID+COUNTKILL+SHOOTABLE
+Bits = SOLID+SHOOTABLE+COUNTKILL
 Respawn frame = 0
 Gib health = -3000
 
@@ -204,7 +204,7 @@ Speed = 15
 Width = 2621440
 Height = 3670016
 Mass = 1000
-Bits = SOLID+COUNTKILL+SHOOTABLE
+Bits = SOLID+SHOOTABLE+COUNTKILL
 Gib health = -8000
 
 Thing 32 (Fake Hitler fireball)
@@ -234,7 +234,7 @@ Death sound = 82
 Speed = 1310720
 Width = 720896
 Missile damage = 20
-Bits = NOBLOCKMAP+MISSILE+DROPOFF+NOGRAVITY
+Bits = DROPOFF+MISSILE+NOBLOCKMAP+NOGRAVITY
 
 Thing 47 (Armor helmet)
 Width = 4194304
@@ -326,13 +326,13 @@ Thing 114 (Dead Soldier)
 Thing 141 (Flamethrower Projectile 1)
 Alert sound = 92
 Death frame = 1046
-Bits = NOBLOCKMAP+DROPOFF+NOGRAVITY+MISSILE+TRANSLUCENT
+Bits = DROPOFF+MISSILE+TRANSLUCENT+NOGRAVITY+NOBLOCKMAP
 
 Thing 142 (Flamethrower Projectile 2)
 Initial frame = 1042
 Alert sound = 92
 Death frame = 1046
-Bits = NOBLOCKMAP+DROPOFF+NOGRAVITY+MISSILE+TRANSLUCENT
+Bits = DROPOFF+MISSILE+TRANSLUCENT+NOGRAVITY+NOBLOCKMAP
 
 Thing 151 (25 Armor)
 Initial frame = 2000
@@ -505,6 +505,8 @@ Frame 52
 Duration = 0
 
 Frame 53
+Sprite number = 8
+Sprite subnumber = 32770
 Duration = 1
 Next frame = 1022
 
@@ -2137,13 +2139,16 @@ Duration = -1
 Next frame = 0
 
 Frame 1022
-Sprite number = 7
-Sprite subnumber = 2
+Sprite number = 8
+Sprite subnumber = 32771
 
 Frame 1023
-Sprite number = 7
-Sprite subnumber = 3
-Duration = 2
+Sprite number = 8
+Sprite subnumber = 4
+
+Frame 1024
+Sprite number = 8
+Sprite subnumber = 5
 Next frame = 54
 
 Frame 1042
@@ -3262,6 +3267,7 @@ FRAME 723 = KeenDie
 FRAME 738 = PosAttack
 FRAME 1022 = NULL
 FRAME 1023 = NULL
+FRAME 1024 = NULL
 FRAME 1089 = FireMissile
 FRAME 1090 = Light1
 FRAME 1091 = Light2
